@@ -2,14 +2,15 @@
 #cars.sh
 #Ellie Kolvereid
 
+N=0
 while [ "$N" -ne "3" ]
 do
 	echo "[1] Enter a car"
 	echo "[2] Display the list of cars"
 	echo "[3] Quit and exit the program"
-	echo "WHich number would you like to select?: "
-	read -r N
-	 case "$N" in
+	echo "Which number would you like to select?: "
+	read -r NUM
+	 case "$NUM" in
 		 "1") 
 			 echo "Enter the year of the car: "
 			 read -r YEAR
