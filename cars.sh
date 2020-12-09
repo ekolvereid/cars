@@ -2,14 +2,14 @@
 #cars.sh
 #Ellie Kolvereid
 
-while [ "$NUM" != 3 ]
+while [ "$N" -ne "3" ]
 do
 	echo "[1] Enter a car"
 	echo "[2] Display the list of cars"
 	echo "[3] Quit and exit the program"
-	echo "Please type the number of the option you want to select: "
-	read -r NUM
-	 case "$NUM" in
+	echo "WHich number would you like to select?: "
+	read -r N
+	 case "$N" in
 		 "1") 
 			 echo "Enter the year of the car: "
 			 read -r YEAR
@@ -25,6 +25,6 @@ do
 		 "3")
 			 echo "Goodbye.";;
 	 	 *)
-	   		 echo "Invalid option. Please try again.";;
+	   		 echo "Sorry, that choice is invalid.";;
 	 esac
 done
