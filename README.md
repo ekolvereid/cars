@@ -1,3 +1,12 @@
+Identifying Information
+1.Name: Ellie Kolvereid
+2.Student ID: 2328379
+3.Email: kolvereid@chapman.edu
+4.Class: CPSC-298-02
+5.Assignment: cars.sh
+
+
+
 # Application Purpose
 
 This repo will contain a bash script named “cars.sh” that will help a user maintain an inventory of old cars.  
