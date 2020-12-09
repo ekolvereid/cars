@@ -9,8 +9,8 @@ do
 	echo "[2] Display the list of cars"
 	echo "[3] Quit and exit the program"
 	echo "Which number would you like to select?: "
-	read -r NUM
-	 case "$NUM" in
+	read -r N
+	 case "$N" in
 		 "1") 
 			 echo "Enter the year of the car: "
 			 read -r YEAR
