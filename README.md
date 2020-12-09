@@ -1,9 +1,9 @@
-#Identifying Information
-Name: Ellie Kolvereid
-Student ID: 2328379
-Email: kolvereid@chapman.edu
-Class: CPSC-298-02
-Assignment: cars.sh
+Identifying Information
+1.Name: Ellie Kolvereid
+2.Student ID: 2328379
+3.Email: kolvereid@chapman.edu
+4.Class: CPSC-298-02
+5.Assignment: cars.sh
 
 
 
