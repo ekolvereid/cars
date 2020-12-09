@@ -2,32 +2,29 @@
 #cars.sh
 #Ellie Kolvereid
 
-n=0
-
-ehco "Welcome to inventory of Old cars!"
-ehco " "
-
-while [ "$n" -ne "3" ]
+while [ "$NUM" != 3 ]
 do
-	echo "Pick your option"
-	echo "Type 1 to enter a new car"
-	echo "Type 2 to display the list of cars"
-	echo "Type 3 to save and exit the program"
-	read -r n
-
-	case "$n" in
-		"1") echo "Enter the year of the car:"
-		read -r year
-		echo "Enter the make of the car:"
-		read -r make
-		echo "Enter the model of the car:"
-		read -r model
-		newCar="$year:$make:$model"
-		echo "$newCar" >> my_old_cars;;
-		"2") sort my_old_cars;;
-		"3") echo "Thank you for using the inventory!";;
-		*) echo "Sorry that opetion is invalid";;
-	esac
-	
-	done
-	
+	echo "[1] Enter a car"
+	echo "[2] Display the list of cars"
+	echo "[3] Quit and exit the program"
+	echo "Please type the number of the option you want to select: "
+	read -r NUM
+	 case "$NUM" in
+		 "1") 
+			 echo "Enter the year of the car: "
+			 read -r YEAR
+			 echo "Enter the make of the car: "
+			 read -r MAKE
+			 echo "Enter the model of the car: "
+			 read -r MODEL
+			 NEW="${YEAR}:${MAKE}:${MODEL}"
+			 echo  "$NEW" >> my_old_cars.txt
+			 ;;
+		 "2")
+	 		 sort  my_old_cars.txt;;
+		 "3")
+			 echo "Goodbye.";;
+	 	 *)
+	   		 echo "Invalid option. Please try again.";;
+	 esac
+done
